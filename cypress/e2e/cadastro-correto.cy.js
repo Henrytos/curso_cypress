@@ -1,9 +1,12 @@
-describe("Cadastro de Usuário", () => {
-  it("deve cadastrar um novo usuário com sucesso", () => {
-    cy.visit("https://adopet-frontend-cypress.vercel.app");
-    
-    cy.contains("a", "Cadastrar").click();
 
+describe("Cadastro de Usuário", () => {
+  beforeEach(() => {
+    cy.visit("https://adopet-frontend-cypress.vercel.app");
+
+    cy.contains("a", "Cadastrar").click();
+  });
+
+  it("deve cadastrar um novo usuário com sucesso", () => {
     const email = `joao${Math.floor(Math.random() * 10000)}@gmail.com`;
 
     // preencher o formulário
