@@ -1,4 +1,3 @@
-
 describe("Cadastro de Usuário", () => {
   beforeEach(() => {
     cy.visit("https://adopet-frontend-cypress.vercel.app");
