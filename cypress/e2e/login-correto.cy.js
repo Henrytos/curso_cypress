@@ -6,8 +6,6 @@ describe("Login de Usuário correto", () => {
   });
 
   it("deve fazer login com sucesso", () => {
-    cy.get('[data-test="input-loginEmail"]').type("joao6756@gmail.com");
-    cy.get('[data-test="input-loginPassword"]').type("Joao2006@2026");
-    cy.get('[data-test="submit-button"]').click();
+    cy.login(`joao6756@gmail.com`, `Joao2006@2026`);
   });
 });
