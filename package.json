@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "cypress": "^15.21.1"
+  },
+  "devDependencies": {
+    "mochawesome": "^8.1.1"
   }
 }
